@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to Bethany's Pie Shop!</title>
+        <meta name="author" content="Bethany's Pie Shop">
+        <meta name="description" content="Store Front for Bethany's Pie Shop">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="Assets/m6/favicon.png">
+        <script>
+function save(){
+                localStorage.setItem("applepie", true);
+            }
+
+            window.onload = function(){
+                var favourite = document.getElementById('favorite');
+                if(window.localStorage)
+
+                {
+                    var storage = window.localStorage;
+                    if(storage.getItem('applepie') == 'true')
+                    {
+                        favorite.innerHTML = "Apple pie is one of your favorites";
+                    }
+                }
+
+            }
+        </script>
+            
+        <style>
+            body {
+                margin-top: 0px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-left: auto;
+                margin-left: auto;
+                background-color: crimson;
+                background-image: url('Assets/m6/images/pattern.png');
+            }
+
+            #mainheader {
+                background-color: purple;
+                color: white;
+            }
+
+            nav {
+                height: 70px;
+                width: 1000px;
+                margin: 0 auto 20px;
+            }
+
+            #leftmenu {
+                float: left;
+                width: 30%;
+                margin-bottom: 20px;
+            }
+
+            .searchbox {
+                padding: 5px;
+                margin: 10px 10px;
+                width: 200px;
+            }
+
+            #main {
+                float: right;
+                width: 70%;
+                margin-bottom: 20px;
+            }
+
+            footer {
+                clear: both;
+                width: 100%;
+            }
+
+            header,
+            section,
+            footer,
+            aside,
+            nav,
+            main,
+            article,
+            figure {
+                display: block;
+            }
+
+            nav>ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav>ul>li {
+                float: left;
+            }
+
+            nav>ul>li>a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+                font-weight: bold;
+            
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header id="mainheader">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="Assets/m6/images/pie.png" height="55"/></a></li>
+                    <li><a href="pieoverview.html">All Pies</a></li>
+                    <li><a href="template.html">Apple Pies</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <div style="width: 1000px; margin-left: auto; margin-right: auto;">
+        
+            <aside id="leftmenu">
+                <a href="index.html"><img src="Assets/m6/images/bethanylogo.png" /></a>
+                <header>
+                    <h4 style="text-align: center;">Browse our pies</h4>
+                    <input type="search" class="searchbox" placeholder="Search our store"/>
+                </header>
+            </aside>
+
+            <main id="main">
+
+                <h1 style="color: purple;">Apple Pie</h1>
+               <figure>
+                   <a href="Assets/m6/images/products/applepie.jpg" target="_blank">
+                    <img src="Assets/m6/images/products/applepie.jpg" width="700">
+                   </a>
+               
+                <figcaption><em>Delicious Apple Pies</em></figcaption>
+               </figure>
+               <p>
+                   <button onclick="save()" type="button">Save as favourite</button>
+                   <span id="favorite"></span>
+               </p>
+                
+                <div style="background-color: whitesmoke;">
+                    <strong>Price: $12.95</strong>
+                    <h2 style="color: teal;">Description</h2>
+                    <p>
+                        Betany received the recipe for this delicious apple pie from her grandmother. At the age of 5, she was already baking this <em>all-American traditional apple</em> pie at her home.
+                        As the recipe goes a long way back, it contains the most typical ingredients used for somany years to make this classic even one of our most popular pies.
+                    </p>
+
+                    <p>
+                        This pie is avaiable <strong>every day</strong> and comes in 2 sizes.
+                        <span style="color: #4dcfa8; font-weight: bold;">You can serve it cold or warm for 4 minutes in the microwave to give it an extra touch</span> Your house will smell just like Bethany's shop.
+                    </p>
+                    <blockquote>
+                        This recipe has been used in our family for generations. We hope you enjoy this pie as we do. - Bethany
+                    </blockquote>
+
+                    <p><small>Note that some ingredients may be dangerous if you have certain allergies. See the list of ingredients below.</small></p>
+
+                    <p><small>Bethany cares about the environment and we try to limit our CO<sub>2</sub> emissions as much as possible. See our terms page for more information.</small></p>
+                    <hr>
+
+                    <h2 style="background-color: whitesmoke; color: teal;">How we make this pie</h2>
+                    <ol type="1">
+                        <li>First, we combine sugar, flour and spices. We toss the apples with some lemon juice and add sugar</li>
+                        <li>We then create the bottom crust and fill that with apple mixture. We put some butter on that. We then roll remaining crust to fit top of pie.</li>
+                        <li>Then we beat the eggs white until we have a foamy mix. That is then brushed over the crust. We sprinkle some extra sugar.</li>
+                        <li>Then the pie goes into the oven at 360<sup>0</sup> for 35 minutes. When ready, we let it cool on a wire rack.</li>
+                    </ol>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>Butter</li>
+                        <li>Eggs</li>
+                        <li>Sugar</li>
+                        <ul>
+                            <li>Regular sugar</li>
+                            <li>Brown sugar</li>
+                            <li>Caster sugar</li>
+                        </ul>
+                        <li>Flour</li>
+                        <li>Cinnamon</li>
+                        <li>Ginger</li>
+                        <li>Nutmeg</li>
+                        <li>Apples</li>
+                        <li>Lemons</li>
+                    </ul>
+
+                </div>
+                
+            </main>
+
+       
+        
+        <footer>
+            <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address></p>
+            <small>2020 Bethany's Pie Shop - All rights reserved</small>
+        </footer>
+        </div>
+           
+        
+        
+    </body>
+
+</html>
